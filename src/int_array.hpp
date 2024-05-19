@@ -26,8 +26,8 @@ public:
     }
 
     friend void swap(Array& lhs, Array& rhs) noexcept {
-        std::swap(lhs.len, lhs.len);
-        std::swap(lhs.buf, lhs.buf);
+        std::swap(lhs.len, rhs.len);
+        std::swap(lhs.buf, rhs.buf);
     }
 
     Array& operator=(const Array& other) {
